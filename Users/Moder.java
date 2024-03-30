@@ -1,8 +1,8 @@
 package org.example.Users;
 
 public class Moder extends Admin {
-    public Moder(String fullName, String phoneNumber, int userId) {
-        super(fullName, phoneNumber, userId);
+    public Moder(int userId, String login, String password) {
+        super(userId, login, password);
     }
 
     @Override

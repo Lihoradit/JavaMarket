@@ -1,8 +1,8 @@
 package org.example.Users;
 
 public abstract class Admin extends User {
-    public Admin(String fullName, String phoneNumber, int userId) {
-        super(fullName, phoneNumber, userId);
+    public Admin(int userId, String login, String password) {
+        super(userId, login, password);
     }
 
     public abstract void setRoot(int root, User userSer, User userIn);

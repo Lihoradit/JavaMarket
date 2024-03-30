@@ -1,8 +1,9 @@
 package org.example;
+
 //Заказы разметсил одним простеньким классом, но очевидно, что можно было бы
 // так же создать абстрактный класс Order и к нему прилепить кучу дочерних категорий для заказов
 //Например Телефоны, Пк/ноутбуки, Машины, Музыкальные инструменты и т.п.
-public class Order {
+public class Product {
     private int price;
     private String productName;
     private int sum;
@@ -33,13 +34,12 @@ public class Order {
 
     @Override
     public String toString() {
-        return "Позиция:" +
-                "Наименование товара: " + productName +
-                "- Цена за штуку: " + price +
-                "- Остаток на складе: " + sum;
+        return "Наименование товара: " + productName + "\n" +
+                "Цена за штуку: " + price + "\n" +
+                "Остаток на складе: " + sum + "\n";
     }
 
-    public Order(int price, String productName, int sum) {
+    public Product(int price, String productName, int sum) {
         this.price = price;
         this.productName = productName;
         this.sum = sum;
